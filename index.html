@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.12.0.js"></script>
+   <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/scripts.js"></script>
+
+    <title>Vacation Generator</title>
+  </head>
+  <body>
+    <h1>Vacation Suggester</h1>
+       <h3>Find out which vacation destination is right for you!</h3>
+       <form id="vacasubmit" class="form-horizontal">
+         <div class="form-group">
+           <label for="age" class="col-sm-2 control-label">Age</label>
+           <div class="col-sm-5">
+             <input type="number" id="age">
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="gender" class="col-sm-2 control-label">Gender</label>
+           <div class="col-sm-5">
+             <select id="gender" class="form-control">
+               <option>Male</option>
+               <option>Female</option>
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="weather" class="col-sm-2 control-label">Weather Preference</label>
+           <div class="col-sm-5">
+             <select id="weather" class="form-control">
+               <option>Warm</option>
+               <option>Mild</option>
+               <option>Cold</option>
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="terrain" class="col-sm-2 control-label">Terrain Preference</label>
+           <div class="col-sm-5">
+             <select id="terrain" class="form-control">
+               <option>Beach</option>
+               <option>Forest</option>
+               <option>Mountain</option>
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="activity" class="col-sm-2 control-label">Activity Preference</label>
+           <div class="col-sm-5">
+             <select id="activity" class="form-control">
+               <option>Lay on the beach</option>
+               <option>Hike in the Forest</option>
+               <option>Ski Bum</option>
+             </select>
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="col-sm-offset-2 col-sm-5">
+             <button id="vacamatch" type="submit" class="btn btn-default">Submit your choices!</button>
+           </div>
+           <div class="col-sm-offset-2 col-sm-5">
+             <button id="reset" type="reset" value="Reset!" class="btn btn-default">Reset</button>
+           </div>
+
+         </div>
+       </form>
+       <p id="generator">Here is the vacation that matched you!</p>
+       <div id="bahamas">
+         <h3>Nassau, Bahamas!</h3>
+         <p>
+           This is the beautiful, sunny, beach-filled vacation for you!
+         </p>
+       </div>
+
+
+  </body>
+</html>

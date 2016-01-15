@@ -1,0 +1,19 @@
+img {
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+h1 , h3 {
+  text-align: center;
+}
+
+#generator {
+  display: none;
+  text-align: center;
+}
+
+#bahamas {
+  display: none;
+  text-align: center;
+}
