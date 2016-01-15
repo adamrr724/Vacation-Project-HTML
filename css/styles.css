@@ -8,12 +8,84 @@ h1 , h3 {
   text-align: center;
 }
 
+#homebody {
+  background-color: #8B8989;
+}
+
+#jumboh1 {
+  font-size:6em;
+}
+
+#jumboh3 {
+  padding-bottom: 7em;
+  font-size: 3em;
+}
+
 #generator {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.cities {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#bahamas{
   display: none;
   text-align: center;
 }
 
-#bahamas {
+#orlando {
   display: none;
   text-align: center;
+}
+
+#vail {
+  display: none;
+  text-align: center;
+}
+
+#portland {
+  display: none;
+  text-align: center;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+.jumbotron img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+.jumbotron h1,h3 {
+      position: relative;
+      z-index: 2;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+}
+
+#reset {
+  margin-top: 1em;
+}
+
+.main {
+  background-color: #CDC9C9;
+  border: solid #909090 1px;
+  border-radius: 8px;
+}
+
+input:invalid {
+  border:1px solid #C67171;
+}
+
+input:valid {
+  border:1px solid #458B00;
 }

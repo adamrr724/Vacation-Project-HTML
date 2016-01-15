@@ -2,32 +2,31 @@
 $(function() {
   $("form#vacasubmit").submit(function(event) {
 var age = $("input#age").val();
-var personality = $("select#personality").val();
 var gender = $("select#gender").val();
 var weather = $("select#weather").val();
 var terrain = $("select#terrain").val();
 var activity = $("select#activity").val();
 
-var pictures = ['<img src="img/bahamas.jpg" />',];
+var pictures = ['<img src="img/bahamas.jpg" />','<img src="img/orlando.jpg" />', '<img src="img/portland.jpg" />','<img src="img/vail.jpg" />',];
 
-  if (age >= 18 && gender === 'Male' || 'Female' && weather === 'Warm'){
+  if (weather === 'Warm' && activity === 'Beach Bum'){
     $('#generator').after(pictures[0]);
     $('#bahamas').show();
   }
-   else if (age <= 35 && gender === 'Female' && personality === 'Serious'){
-     $('#result').after(pictures[1]);
+   else if (weather === 'Warm' && activity === 'Amusement Parks'){
+     $('#generator').after(pictures[1]);
+     $('#orlando').show();
    }
-   else if (age <= 35 && gender === 'Male' && personality === 'Serious'){
-     $('#result').after(pictures[0]);
+   else if (weather === 'Mild' && activity === 'Hike in the Forest'){
+     $('#generator').after(pictures[2]);
+      $('#portland').show();
    }
-   else if (age >= 35 && gender === 'Female' && personality === 'Serious'){
-     $('#result').after(pictures[4]);
-   }
-   else if (age <= 35 && gender === 'Male' && personality === 'Goofy'){
-     $('#result').after(pictures[2]);
-   }
-   else if (age <= 35 && gender === 'Female' && personality === 'Goofy'){
-     $('#result').after(pictures[5]);
+   else if (weather === 'Cold' && activity === 'Ski Bum'){
+     $('#generator').after(pictures[3]);
+      $('#vail').show();
+    }
+   else {
+     alert('Your answers are too different for us to make a proper assessment. For example, you may have chosen that you like to be a warm ski bum! This may be ideal, but not realistic for us to give you a good result. Please try again! :)')
    }
 
    $('#generator').show();

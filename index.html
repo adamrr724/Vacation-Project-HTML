@@ -10,14 +10,23 @@
 
     <title>Vacation Generator</title>
   </head>
-  <body>
-    <h1>Vacation Suggester</h1>
-       <h3>Find out which vacation destination is right for you!</h3>
+  <body id="homebody">
+      <!-- Head Nav -->
+      <div class="container-header-gradient">
+        <div class="jumbotron">
+          <img src="img/airplane.jpg" alt="" />
+          <h1 id="jumboh1">Vacation Suggester</h1>
+             <h3 id="jumboh3">Find out which vacation destination is right for you!</h3>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="container main">
+        <h5>Please fill out the form below completely.</h5>
        <form id="vacasubmit" class="form-horizontal">
          <div class="form-group">
            <label for="age" class="col-sm-2 control-label">Age</label>
            <div class="col-sm-5">
-             <input type="number" id="age">
+             <input type="number" name="agebox" id="age" required>
              </select>
            </div>
          </div>
@@ -47,6 +56,7 @@
                <option>Beach</option>
                <option>Forest</option>
                <option>Mountain</option>
+               <option>City</option>
              </select>
            </div>
          </div>
@@ -54,9 +64,10 @@
            <label for="activity" class="col-sm-2 control-label">Activity Preference</label>
            <div class="col-sm-5">
              <select id="activity" class="form-control">
-               <option>Lay on the beach</option>
+               <option>Beach Bum</option>
                <option>Hike in the Forest</option>
                <option>Ski Bum</option>
+               <option>Amusement Parks</option>
              </select>
            </div>
          </div>
@@ -65,17 +76,38 @@
              <button id="vacamatch" type="submit" class="btn btn-default">Submit your choices!</button>
            </div>
            <div class="col-sm-offset-2 col-sm-5">
-             <button id="reset" type="reset" value="Reset!" class="btn btn-default">Reset</button>
+             <button id="reset" type="reset" value="Clear Results" onClick="window.location.reload()" class="btn btn-default">Reset</button>
            </div>
-
          </div>
        </form>
-       <p id="generator">Here is the vacation that matched you!</p>
-       <div id="bahamas">
-         <h3>Nassau, Bahamas!</h3>
-         <p>
-           This is the beautiful, sunny, beach-filled vacation for you!
-         </p>
+      </div>
+       <!-- Matches -->
+       <div class="matches">
+         <p id="generator">Here is the vacation that matched you!</p>
+         <div id="bahamas" class="cities">
+           <h3>Nassau, Bahamas!</h3>
+           <p>
+             This is the beautiful, sunny, beach-filled vacation for you!
+           </p>
+         </div>
+         <div id="orlando" class="cities">
+           <h3>Orlando, Florida!</h3>
+           <p>
+             This is the magical and adventurous vacation for you!
+           </p>
+         </div>
+         <div id="portland" class="cities">
+           <h3>Portland, Oregon!</h3>
+           <p>
+             This is the outdoorsy vacation for you!
+           </p>
+         </div>
+         <div id="vail" class="cities">
+           <h3>Vail, Colorado</h3>
+           <p>
+             This is the slopeside destination for you!
+           </p>
+         </div>
        </div>
 
 
