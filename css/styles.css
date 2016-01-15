@@ -50,6 +50,11 @@ h1 , h3 {
   display: none;
   text-align: center;
 }
+#paris {
+  display: none;
+  text-align: center;
+}
+
 
 .top {
   position: relative;

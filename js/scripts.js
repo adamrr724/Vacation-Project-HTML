@@ -9,6 +9,10 @@ var activity = $("select#activity").val();
 
 var pictures = ['<img class="img" src="img/bahamas.jpg" />','<img src="img/orlando.jpg" />', '<img src="img/portland.jpg" />','<img src="img/vail.jpg" />','<img src="img/paris.jpeg" />', ];
 
+
+
+
+
   if (weather === 'Warm' && activity === 'Beach Bum'){
     $('#generator').after(pictures[0]);
     $('#bahamas').show();
