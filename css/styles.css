@@ -15,7 +15,7 @@ h1 , h3 {
 }
 
 #jumboh3 {
-  padding-bottom: 7em;
+  padding-bottom: 8em;
   font-size: 3em;
 }
 
@@ -75,6 +75,9 @@ h1 , h3 {
   text-align: center;
   margin: 2em;
 }
+.matches {
+  display: none;
+}
 
 #homebody {
   background-color: #666666
@@ -104,4 +107,8 @@ input:invalid {
 
 input:valid {
   border:1px solid #458B00;
+}
+
+p {
+  text-align: center;
 }
