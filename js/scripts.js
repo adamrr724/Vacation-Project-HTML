@@ -14,17 +14,17 @@ var pictures = ['<img src="img/bahamas.jpg" />','<img src="img/orlando.jpg" />',
     $('#bahamas').show();
     $('#generator').show();
   }
-   else if (weather === 'Warm' && activity === 'Amusement Parks'){
+  else if (weather === 'Warm' && activity === 'Amusement Parks'){
      $('#generator').after(pictures[1]);
      $('#orlando').show();
      $('#generator').show();
    }
-   else if (weather === 'Mild' && activity === 'Hike in the Forest'){
+  else if(weather === 'Mild' && activity === 'Hike in the Forest'){
      $('#generator').after(pictures[2]);
       $('#portland').show();
       $('#generator').show();
    }
-   else if (weather === 'Cold' && activity === 'Ski Bum'){
+  else if (weather === 'Cold' && activity === 'Ski Bum'){
      $('#generator').after(pictures[3]);
       $('#vail').show();
       $('#generator').show();
