@@ -55,6 +55,18 @@ var sum = weather + terrain + activity;
        }
 
                 // USING STRINGS
+
+  // $(function() {
+  //   $("form#vacasubmit").submit(function(event) {
+  // var age = $("input#age").val();
+  // var gender = $("select#gender").val();
+  // var weather = $("select#weather").val();
+  // var terrain = $("select#terrain").val();
+  // var activity = $("select#activity").val();
+  //
+  //   console.log("activity is" + activity);
+  //
+  // var pictures = ['<img class="img" src="img/bahamas.jpg" />','<img src="img/orlando.jpg" />', '<img src="img/portland.jpg" />','<img src="img/vail.jpg" />','<img src="img/paris.jpeg" />', ];
   //
   // if (weather === 'Warm' && activity === 'Beach Bum'){
   //   $('#generator').after(pictures[0]);
